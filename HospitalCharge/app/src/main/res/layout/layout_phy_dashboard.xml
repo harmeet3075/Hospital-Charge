@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_textview1"
+        android:layout_marginTop="10dp"
+        android:text="WELCOME TO USER"
+        android:layout_centerHorizontal="true"
+        android:textColor="#c91111"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_textview1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/db_user_icon"
+        android:id="@+id/user_imageview1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:layout_below="@+id/user_imageview1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#c91111"
+        android:id="@+id/username_textview2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_textview2"
+        android:text="user.name@domainname.com"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/username_textview3"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/username_textview3"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Name"
+        android:singleLine="true"
+        android:background="@drawable/filed_large"
+        android:padding="10dp"
+        android:id="@+id/editext1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editext1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Address"
+        android:singleLine="true"
+        android:background="@drawable/filed_large"
+        android:padding="10dp"
+        android:id="@+id/editext2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editext2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Email"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/filed_large"
+        android:padding="10dp"
+        android:id="@+id/editext3"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editext3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="phone"
+        android:hint="Telephone"
+        android:singleLine="true"
+        android:background="@drawable/filed_large"
+        android:padding="10dp"
+        android:id="@+id/editext4"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editext4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Zip Code"
+        android:singleLine="true"
+        android:background="@drawable/filed_large"
+        android:padding="10dp"
+        android:id="@+id/editext5"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/terms_conditions"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/terms_conditions"
+        />
+</RelativeLayout>

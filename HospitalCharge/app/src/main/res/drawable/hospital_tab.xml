@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When selected, use White -->
+    <item android:drawable="@drawable/btn_hospital"
+        android:state_selected="true" />
+    <!-- When not selected, use RED-->
+    <item android:drawable="@drawable/btn_hospital_h" />
+</selector>

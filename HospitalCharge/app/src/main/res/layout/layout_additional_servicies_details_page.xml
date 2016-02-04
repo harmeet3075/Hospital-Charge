@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_add_servicies_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"></include>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c91111"
+            android:text="Hospital Name"
+            android:textSize="16sp"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:id="@+id/search_textview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_textview"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text="Address:"
+            android:id="@+id/address"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_textview"
+            android:layout_toRightOf="@+id/address"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:id="@+id/textview1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            android:text="Phone:"
+            android:id="@+id/phone"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview1"
+            android:layout_toRightOf="@+id/phone"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            android:textColor="#000000"
+            android:id="@+id/textview2"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            android:text="Zip:"
+            android:id="@+id/zip"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview2"
+            android:layout_toRightOf="@+id/zip"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            android:textColor="#000000"
+            android:id="@+id/textview3"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            android:text="Email:"
+            android:id="@+id/email"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview3"
+            android:layout_toRightOf="@+id/email"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            android:textColor="#000000"
+            android:id="@+id/textview4"
+            android:text="NA"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#c91111"
+            android:layout_below="@+id/textview4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Claim this listing"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:id="@+id/claim"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/claim"
+            android:layout_marginTop="10dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangular_map"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map"
+            android:layout_marginTop="5dp"
+            android:id="@+id/mapText"
+            android:textColor="#c91111"
+            android:layout_marginLeft="10dp"
+            android:text="Click here to see enlarge view of map."/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis List"
+            android:background="#c91111"
+            android:layout_below="@+id/mapText"
+            android:textColor="#ffffff"
+            android:id="@+id/diaglistbutton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+</ScrollView>
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/db_icon"
+        android:id="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/divider_ver"
+        android:layout_toStartOf="@+id/divider_ver"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:id="@+id/dash"
+        android:textSize="12sp"
+        android:layout_below="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/db_divider_vertical"
+        android:id="@+id/divider_ver"
+        android:layout_alignTop="@+id/button1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/db_edit_icon"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/divider_ver"
+        android:layout_toRightOf="@+id/divider_ver"
+        android:layout_toEndOf="@+id/divider_ver"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/divider_ver"
+        android:text="Edit Profile"
+        android:textSize="12sp"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignLeft="@+id/button2"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/db_divider_horzantial"
+        android:layout_marginTop="10dp"
+        android:id="@+id/divider_hor"
+        android:layout_below="@+id/dash"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/db_cp_icon_02"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignRight="@+id/dash"
+        android:layout_alignEnd="@+id/dash" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textSize="12sp"
+        android:id="@+id/cp"
+        android:layout_below="@+id/button3"
+        android:layout_toLeftOf="@+id/divider_ver"
+        android:layout_toStartOf="@+id/divider_ver"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/divider_hor"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:background="@drawable/db_diagnoses_icon_02"
+        android:id="@+id/button4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:textSize="12sp"
+        android:layout_alignLeft="@+id/button4"
+        android:text="Diagnosis List"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/terms_conditions"
+        android:id="@+id/terms_conditions"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

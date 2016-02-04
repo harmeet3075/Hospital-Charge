@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_legal_disclaimer_header"
+        android:layout_width="match_parent"
+        android:id="@+id/header"
+        android:layout_height="wrap_content"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:text="HospitalCharge.com does not represent any healthcare organization or provider listed on this website, and is not liable for any damages that may incur by use of information that this website contains.  "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_margin="10dp"
+        android:text="By searching through the information provided on HospitaCharge.com, the user agrees and is responsible for verifying the accuracy of the information with each listed provider, as information may change. "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:text="HospitalCharge.com is not liable for the potential misrepresentation or inaccuracy of the data the website contains."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:text="Data collected from U.S government  and non-government sources."/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/terms_conditions"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/terms_conditions"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

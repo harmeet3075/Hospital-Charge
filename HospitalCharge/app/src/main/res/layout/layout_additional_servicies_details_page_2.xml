@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:orientation="vertical">
+        <include layout="@layout/layout_add_servicies_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            ></include>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#c91111"
+                android:text="Hospital Name"
+                android:textSize="14sp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/search_textview"/>
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/search_textview"
+                android:id="@+id/imageview1"
+                android:src="@drawable/no_image"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_textview"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageview1"
+                android:textSize="10sp"
+                android:text="Provider Type:"
+                android:id="@+id/provider"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_textview"
+                android:layout_toRightOf="@+id/provider"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:text="NA"
+                android:textColor="#000000"
+                android:id="@+id/textview1"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageview1"
+                android:layout_marginTop="6dp"
+                android:textSize="10sp"
+                android:text="Address:"
+                android:id="@+id/address"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview1"
+                android:layout_toRightOf="@+id/address"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:text="NA"
+                android:id="@+id/textview2"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageview1"
+                android:layout_marginTop="8dp"
+                android:textSize="10sp"
+                android:text="Gender:"
+                android:id="@+id/gender"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_toRightOf="@+id/gender"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"
+                android:id="@+id/textview3"
+                android:text="NA"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageview1"
+                android:layout_marginTop="6dp"
+                android:textSize="10sp"
+                android:text="Credentials:"
+                android:id="@+id/credentials"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview3"
+                android:layout_toRightOf="@+id/credentials"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:id="@+id/textview4"
+                android:text="NA"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/credentials"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageview1"
+                android:layout_marginTop="6dp"
+                android:textSize="10sp"
+                android:text="Phone:"
+                android:id="@+id/phone"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/credentials"
+                android:layout_toRightOf="@+id/phone"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:id="@+id/textview5"
+                android:text="NA"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageview1"
+                android:layout_marginTop="6dp"
+                android:textSize="10sp"
+                android:text="Zip:"
+                android:id="@+id/zip"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_toRightOf="@+id/zip"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:id="@+id/textview6"
+                android:text="NA"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zip"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageview1"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="10sp"
+                android:text="Email:"
+                android:id="@+id/email"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zip"
+                android:layout_toRightOf="@+id/email"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:id="@+id/textview7"
+                android:text="NA"
+                />
+
+
+
+        </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c91111"
+        android:layout_below="@+id/textview7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Claim this listing"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:id="@+id/claim"/>
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/claim"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectangular_map"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Procedure List"
+        android:background="#c91111"
+        android:layout_below="@+id/map"
+        android:textColor="#ffffff"
+        android:id="@+id/diaglistbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+

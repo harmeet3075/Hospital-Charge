@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_textview1"
+        android:layout_marginTop="10dp"
+        android:text="WELCOME TO USER"
+        android:layout_centerHorizontal="true"
+        android:textColor="#c91111"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_textview1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/db_user_icon"
+        android:id="@+id/user_imageview1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:layout_below="@+id/user_imageview1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#c91111"
+        android:id="@+id/username_textview2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_textview2"
+        android:text="user.name@domainname.com"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/username_textview3"/>
+
+    <include layout="@layout/layout_demo01"
+        android:layout_below="@+id/username_textview3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/included_dash"
+        android:layout_height="wrap_content"></include>
+</RelativeLayout>

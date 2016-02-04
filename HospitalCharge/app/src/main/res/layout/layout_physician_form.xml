@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/physician_form_spinner1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filed_large"
+
+            android:prompt="@string/spinner_title_1"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/physician_form_edittext1"
+            android:layout_below="@+id/physician_form_spinner1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filed_large"
+            android:hint="Enter Name"
+            android:singleLine="true"
+            android:paddingLeft="10dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/physician_form_edittext1"
+            android:id="@+id/physician_form_spinner2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filed_large"
+
+            android:paddingLeft="10dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/physician_form_edittext2"
+            android:layout_below="@+id/physician_form_spinner2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filed_large"
+            android:hint="Enter Credentials"
+            android:singleLine="true"
+            android:paddingLeft="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/physician_form_edittext2"
+            android:id="@+id/physician_form_linear1">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/filed_large"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/physician_form_edittext3"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Code"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/filed_large"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/physician_form_edittext4"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Enter Phone"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/physician_form_edittext5"
+            android:layout_below="@+id/physician_form_linear1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filed_large"
+            android:hint="Enter Email"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/physician_form_edittext6"
+            android:layout_below="@+id/physician_form_edittext5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filed_large"
+            android:hint="Enter Password"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/physician_form_edittext7"
+            android:layout_below="@+id/physician_form_edittext6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:background="@drawable/filed_large"
+            android:hint="Enter Street Address 1"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/physician_form_edittext8"
+            android:layout_below="@+id/physician_form_edittext7"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPostalAddress"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filed_large"
+            android:hint="Enter Street Address 2"
+            android:singleLine="true"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/physician_form_edittext8"
+            android:id="@+id/physician_form_linear2">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/filed_large"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/physician_form_edittext9"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:hint="Enter City"
+
+                android:paddingLeft="10dp"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/filed_large"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/physician_form_edittext10"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Enter Zip"
+                android:singleLine="true"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/physician_form_linear2"
+            android:id="@+id/physician_form_linear3">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:id="@+id/physician_form_spinner3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/filed_large"
+                android:paddingLeft="10dp"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:id="@+id/physician_form_spinner4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/filed_large"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/physician_form_edittext13"
+            android:layout_below="@+id/physician_form_linear3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filed_large"
+            android:hint="Enter License No"
+            android:singleLine="true"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/physician_form_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_submit"
+            android:layout_below="@+id/physician_form_edittext13"
+            android:layout_alignRight="@+id/physician_form_edittext13"
+            android:layout_alignEnd="@+id/physician_form_edittext13" />
+    </RelativeLayout>
+</ScrollView>

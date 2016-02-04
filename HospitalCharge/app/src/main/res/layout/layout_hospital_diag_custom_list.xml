@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/rectangular">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnosis Name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#c91111"
+        android:id="@+id/textview1"/>
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/edit_icon"
+        android:layout_marginLeft="100dp"
+        android:visibility="visible"
+        android:layout_toRightOf="@+id/textview1"
+        android:id="@+id/imageView1" />
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/delete_icon"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/imageview2"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_toEndOf="@+id/imageView1"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textview2"
+        android:textColor="#030303"
+        android:textAllCaps="false"
+        android:text="textview"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#c91111"
+        android:id="@+id/textview3"
+        android:text="Discharges"
+        android:layout_below="@+id/textview2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#030303"
+        android:id="@+id/textview4"
+        android:text="100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c91111"
+        android:id="@+id/textview5"
+        android:text="Avg. Covered Charges"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/textview3"
+        android:layout_toRightOf="@+id/textview7"
+        android:layout_toEndOf="@+id/textview7"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#030303"
+        android:id="@+id/textview6"
+        android:text="$3.00"
+        android:layout_alignTop="@+id/textview4"
+        android:layout_alignLeft="@+id/textview5"
+        android:layout_alignStart="@+id/textview5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#c91111"
+        android:id="@+id/textview7"
+        android:text="Avg. Total Payment"
+        android:layout_below="@+id/textview6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textview8"
+        android:textColor="#030303"
+        android:text="$3.00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c91111"
+        android:id="@+id/textview9"
+        android:text="Avg. Medical Payment"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/textview7"
+        android:layout_alignLeft="@+id/textview6"
+        android:layout_alignStart="@+id/textview6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview10"
+        android:textColor="#030303"
+        android:text="$3.00"
+        android:layout_alignTop="@+id/textview8"
+        android:layout_alignLeft="@+id/textview9"
+        android:layout_alignStart="@+id/textview9" />
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_claim_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"></include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLAIM:"
+        android:textSize="16sp"
+        android:textColor="#c91111"
+        android:layout_margin="10dp"
+        android:id="@+id/claim"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/filed_large"
+        android:hint="Hospitals Name"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:id="@+id/editext1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filed_large"
+        android:hint="Email"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:id="@+id/editext2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filed_large"
+        android:hint="Password"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:id="@+id/editext3"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filed_large"
+        android:hint="Phone"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:id="@+id/editext4"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:background="@drawable/filed_large"
+        android:hint="Licence No"
+        android:padding="10dp"
+        android:id="@+id/editext5"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filed_large"
+        android:hint="Message"
+        android:lines="3"
+        android:textSize="16sp"
+        android:gravity="top|left"
+        android:padding="10dp"
+        android:id="@+id/editext6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="#c91111"
+            android:textColor="#ffffff"
+            android:text="Save"
+            android:id="@+id/save"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="#c91111"
+            android:textColor="#ffffff"
+            android:text="Cancel"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/cancel"/>
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

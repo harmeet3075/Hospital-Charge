@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c91111"
+            android:text="Add Diagnosis"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:id="@+id/heading"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Hospital Name"
+            android:layout_below="@+id/heading"
+            android:layout_margin="10dp"
+            android:id="@+id/textview1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_below="@+id/heading"
+            android:layout_toRightOf="@+id/textview1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/textview2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Name"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textview2"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textview3"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/filed_large"
+            android:id="@+id/spinner1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="48dp"
+            android:layout_below="@id/textview2"
+            android:layout_toRightOf="@id/textview3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Discharges"
+            android:layout_below="@id/textview3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@id/textview5"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/textview3"
+            android:layout_toRightOf="@id/textview5"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:background="@drawable/filed_large"
+            android:id="@+id/editext1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg. Covered Charges"
+            android:layout_below="@id/textview5"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@id/textview6"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textview5"
+            android:layout_toRightOf="@id/textview6"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:background="@drawable/filed_large"
+            android:id="@+id/editext2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg. Total Payment"
+            android:layout_below="@id/textview6"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@id/textview7"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textview6"
+            android:layout_toRightOf="@id/textview7"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/filed_large"
+            android:id="@+id/editext3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg. Medical Payment"
+            android:layout_below="@id/textview7"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:id="@id/textview8"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textview7"
+            android:layout_toRightOf="@id/textview8"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/filed_large"
+            android:id="@+id/editext4"/>
+    </RelativeLayout>
+</ScrollView>
+

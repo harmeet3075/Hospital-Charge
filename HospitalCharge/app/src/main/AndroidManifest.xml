@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.hospitalcharge">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_48x48"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.HospitalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.PhysicianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.NavigationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:hardwareAccelerated="true"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/DEVELOPER_KEY" />
+        <activity android:name=".Main.YouTubeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".Main.CustomLightboxActivity"></activity>
+        <activity android:name=".Main.SearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.AdditionalServicies"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.ProcedureAdditional"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.HospitalClaimActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.PhysicianClaimActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.LocationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.ProcedureClaimActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.LegalDisclaimerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.VideoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.PhysicianEditActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.Diagnosis_add_listview"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.Diagnosis_add_listview_2"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.Diagnosis_add_listview_3"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.PhysicianDeleteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".Main.HospitalEditActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main.HospitalDeleteActivity"
+            android:theme="@android:style/Theme.Dialog"></activity>
+    </application>
+</manifest>

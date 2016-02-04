@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c91111"
+        android:text="Hospital Name"
+        android:textSize="14sp"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/search_textview"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/search_textview"
+        android:id="@+id/imageview1"
+        android:src="@drawable/no_image"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/imageview1"
+        android:layout_below="@+id/search_textview"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:text="Provider Type:"
+        android:id="@+id/provider"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_textview"
+        android:layout_toRightOf="@+id/provider"
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginTop="6dp"
+        android:text="type"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:id="@+id/textview1"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/provider"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageview1"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:text="Address:"
+        android:id="@+id/address"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_toRightOf="@+id/address"
+        android:layout_marginLeft="5dp"
+        android:textSize="10sp"
+        android:text="12345"
+        android:layout_marginTop="14dp"
+        android:textColor="#000000"
+        android:id="@+id/textview2"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:text="Gender:"
+        android:layout_toRightOf="@+id/imageview1"
+        android:id="@+id/gender"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview2"
+        android:layout_toRightOf="@+id/gender"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:id="@+id/textview3"
+        android:text="NA"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/imageview1"
+        android:textSize="12sp"
+        android:text="Credentials:"
+        android:id="@+id/credentials"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview3"
+        android:layout_toRightOf="@+id/credentials"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:textColor="#000000"
+        android:id="@+id/textview4"
+        android:text="NA"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credentials"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageview1"
+        android:layout_marginTop="6dp"
+        android:textSize="12sp"
+        android:text="Phone:"
+        android:id="@+id/phone"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credentials"
+        android:layout_toRightOf="@+id/phone"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:textColor="#000000"
+        android:id="@+id/textview5"
+        android:text="NA"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/imageview1"
+        android:text="Zip:"
+        android:id="@+id/zip"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_toRightOf="@+id/zip"
+        android:layout_marginLeft="5dp"
+
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:textColor="#000000"
+        android:id="@+id/textview6"
+        android:text="NA"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:textSize="12sp"
+        android:text="Email:"
+        android:layout_toRightOf="@+id/imageview1"
+        android:id="@+id/email"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zip"
+        android:layout_toRightOf="@+id/email"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:textColor="#000000"
+        android:id="@+id/textview7"
+        android:text="NA"
+        />
+    <TextView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_click"
+        android:layout_marginLeft="10dp"
+        android:text="Click here to see location on google map."
+        android:textColor="#c91111"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c91111"
+        android:layout_below="@+id/map"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:text="Claim this listing"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:id="@+id/claim"/>
+    <TextView
+        android:id="@+id/prolist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/claim"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:text="Procedure List"
+        android:textColor="#c91111"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_listview"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/prolist">
+    </ListView>
+</RelativeLayout>

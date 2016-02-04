@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_textview1"
+        android:layout_marginTop="10dp"
+        android:text="WELCOME TO USER"
+        android:layout_centerHorizontal="true"
+        android:textColor="#c91111"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_textview1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/db_user_icon"
+        android:id="@+id/user_imageview1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:layout_below="@+id/user_imageview1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#c91111"
+        android:id="@+id/username_textview2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_textview2"
+        android:text="user.name@domainname.com"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/username_textview3"/>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/username_textview3"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="30dp"
+       android:background="@drawable/db_icon"
+       android:id="@+id/button1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Dashboard"
+        android:layout_below="@+id/button1" />
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_textview3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/db_edit_icon"
+        android:layout_toRightOf="@+id/button1"
+        android:id="@+id/button2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/button1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+
+        android:background="@drawable/db_cp_icon"
+        android:id="@+id/button3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:layout_below="@+id/button3"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/db_diagnoses_icon"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/button3"
+        android:id="@+id/button4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnosis List"
+        android:layout_below="@+id/button4"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_marginLeft="30dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/terms_conditions"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
